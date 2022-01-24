@@ -752,12 +752,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/radipo#has_disorder_description"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/def/radipo#has_disorder_id"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1267,6 +1261,25 @@
         <rdfs:comment>A protein that can transport a molecule or group of molecules.</rdfs:comment>
         <rdfs:label>Transporter</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/radipo#16666 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/radipo#16666">
+        <rdf:type rdf:resource="https://w3id.org/def/radipo#Malformation_anomaly"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
