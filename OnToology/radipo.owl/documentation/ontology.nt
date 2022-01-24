@@ -45,8 +45,8 @@
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_ability_affected_by> .
-<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Ability_affected> .
-<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disability> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disability> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Ability_affected> .
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#degree_from_disability
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#degree_from_disability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -108,7 +108,7 @@
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> .
 # 
@@ -156,8 +156,14 @@
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_in_phase
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_in_phase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_in_phase> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_in_phase> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_in_phase> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase> .
+# 
+# http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug> .
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_present_in
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_present_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -171,6 +177,8 @@
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug> .
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#produces_loss_of_ability
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#produces_loss_of_ability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -205,6 +213,7 @@
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_catalytic_activity
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_catalytic_activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_catalytic_activity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Enzyme> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_catalytic_activity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_cell_id
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_cell_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -220,6 +229,7 @@
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_description
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_disorder_description
@@ -306,6 +316,7 @@
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_id
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_name
@@ -564,60 +575,64 @@ _:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_phase_name> .
-_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_phase_name> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase> <http://www.w3.org/2000/01/rdf-schema#comment> "The drug is either in experimental phase, approved or withdrawn" .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase> <http://www.w3.org/2000/01/rdf-schema#label> "Experimental_phase" .
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Function
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#had_by_protein> .
-_:genid31 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid31 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function_description> .
-_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#had_by_protein> .
+_:genid32 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function_id> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function_description> .
 _:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function_name> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function_id> .
 _:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function_name> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Function> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the protein function(s). The names and ids are terms from the Gene Ontology. The description is obtained from Uniprot." .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Function> <http://www.w3.org/2000/01/rdf-schema#label> "Function" .
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Gene_with_protein
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Gene_with_protein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Gene_with_protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity> .
-<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Gene_with_protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_product> .
-_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Gene_with_protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_product> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Gene_with_protein> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Non_coding_RNA> .
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_associated_to_disorder> .
-_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Clinical_entity> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
 _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_gene_id> .
-_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_associated_to_disorder> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Clinical_entity> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_gene_name> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_gene_id> .
 _:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
 _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_genetic_location> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_gene_name> .
 _:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_genetic_location> .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity> <http://www.w3.org/2000/01/rdf-schema#label> "Genetic_entity" .
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Group_of_disorders
@@ -632,14 +647,14 @@ _:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Loss_of_ability
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Loss_of_ability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Loss_of_ability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#ability_is_lost_in> .
-_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disability> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Loss_of_ability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#ability_is_lost> .
-_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#ability_is_lost_in> .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disability> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Loss_of_ability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#ability_is_lost> .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Loss_of_ability> <http://www.w3.org/2000/01/rdf-schema#comment> "Weather the ability is lost by the pacient over the course of a disease or not." .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Loss_of_ability> <http://www.w3.org/2000/01/rdf-schema#label> "Loss_of_ability" .
 # 
@@ -661,27 +676,27 @@ _:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_biological_process> .
-_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Biological_process> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_cellular_component> .
-_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Cellular_component> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_biological_process> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Biological_process> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function> .
-_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Function> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_cellular_component> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Cellular_component> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of> .
-_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Function> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
 _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_encoded_by> .
-_:genid46 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid46 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Gene_with_protein> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_encoded_by> .
+_:genid47 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Gene_with_protein> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> <http://www.w3.org/2000/01/rdf-schema#comment> "A protein is a biological molecule encoded by a gene. The ids and names are retrieved from Uniprot." .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein> <http://www.w3.org/2000/01/rdf-schema#label> "Protein" .
 # 
@@ -705,35 +720,35 @@ _:genid46 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/us
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Symptom
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Symptom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Symptom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_present_in> .
-_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Clinical_entity> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Symptom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_hpo_id> .
-_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_present_in> .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Clinical_entity> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Symptom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
 _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_symptom_description> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_hpo_id> .
 _:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Symptom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
 _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_symptom_name> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_symptom_description> .
 _:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Symptom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_symptom_name> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Symptom> <http://www.w3.org/2000/01/rdf-schema#comment> "The symptoms and sign of a disorder are annotated with Human Phenotype Ontology terms." .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Symptom> <http://www.w3.org/2000/01/rdf-schema#label> "Symptom" .
 # 
 # http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Temporality
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Temporality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Temporality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_related_to_disability> .
-_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disability> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Temporality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
 _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_name> .
-_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_related_to_disability> .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disability> .
+<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Temporality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_name> .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Temporality> <http://www.w3.org/2000/01/rdf-schema#comment> "Period of time the functional consequence/disability is present in the life of the patient." .
 <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Temporality> <http://www.w3.org/2000/01/rdf-schema#label> "Temporality" .
 # 
