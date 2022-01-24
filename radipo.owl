@@ -80,8 +80,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_ability_affected_by"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Ability_affected"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disability"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disability"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Ability_affected"/>
     </owl:ObjectProperty>
     
 
@@ -187,7 +187,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein"/>
     </owl:ObjectProperty>
@@ -267,8 +267,18 @@
     <!-- http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_in_phase -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_in_phase">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug"/>
     </owl:ObjectProperty>
     
 
@@ -293,7 +303,10 @@
 
     <!-- http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug"/>
+    </owl:ObjectProperty>
     
 
 
@@ -349,6 +362,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_catalytic_activity">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Enzyme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -376,6 +390,7 @@
     <!-- http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_description -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_description">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -522,6 +537,7 @@
     <!-- http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_id -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_id">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -938,6 +954,12 @@
     <!-- http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_phase_name"/>
