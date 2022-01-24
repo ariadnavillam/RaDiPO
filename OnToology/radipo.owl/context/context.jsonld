@@ -1,169 +1,169 @@
 {
   "@context" : {
     "has_disorder_description" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_disorder_description",
+      "@id" : "https://w3id.org/def/radipo#has_disorder_description",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "has_function_name" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function_name",
+      "@id" : "https://w3id.org/def/radipo#has_function_name",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Biological_anomaly" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Biological_anomaly"
+      "@id" : "https://w3id.org/def/radipo#Biological_anomaly"
     },
     "has_description" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_description",
+      "@id" : "https://w3id.org/def/radipo#has_description",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "has_catalytic_activity" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_catalytic_activity",
+      "@id" : "https://w3id.org/def/radipo#has_catalytic_activity",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "has_disorder_id" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_disorder_id",
+      "@id" : "https://w3id.org/def/radipo#has_disorder_id",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "is_in_phase" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_in_phase",
+      "@id" : "https://w3id.org/def/radipo#is_in_phase",
       "@type" : "@id"
     },
     "Clinical_subtype" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Clinical_subtype"
+      "@id" : "https://w3id.org/def/radipo#Clinical_subtype"
     },
     "has_protein_product" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_product",
+      "@id" : "https://w3id.org/def/radipo#has_protein_product",
       "@type" : "@id"
     },
     "has_function_description" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function_description",
+      "@id" : "https://w3id.org/def/radipo#has_function_description",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "has_protein_located" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_located",
+      "@id" : "https://w3id.org/def/radipo#has_protein_located",
       "@type" : "@id"
     },
     "affects_ability" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability",
+      "@id" : "https://w3id.org/def/radipo#affects_ability",
       "@type" : "@id"
     },
     "Degree_of_severity" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Degree_of_severity"
+      "@id" : "https://w3id.org/def/radipo#Degree_of_severity"
     },
     "has_drug_description" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_drug_description",
+      "@id" : "https://w3id.org/def/radipo#has_drug_description",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Thing" : {
       "@id" : "http://www.w3.org/2002/07/owl#Thing"
     },
     "has_name" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_name",
+      "@id" : "https://w3id.org/def/radipo#has_name",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "topDataProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
     },
     "has_target" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target",
+      "@id" : "https://w3id.org/def/radipo#has_target",
       "@type" : "@id"
     },
     "Particular_clinical_situation" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Particular_clinical_situation"
+      "@id" : "https://w3id.org/def/radipo#Particular_clinical_situation"
     },
     "is_consequence_of_disorder" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_consequence_of_disorder",
+      "@id" : "https://w3id.org/def/radipo#is_consequence_of_disorder",
       "@type" : "@id"
     },
     "Clinical_entity" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Clinical_entity"
+      "@id" : "https://w3id.org/def/radipo#Clinical_entity"
     },
     "has_drug_name" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_drug_name",
+      "@id" : "https://w3id.org/def/radipo#has_drug_name",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "has_gene_name" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_gene_name",
+      "@id" : "https://w3id.org/def/radipo#has_gene_name",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
     "has_symptom_name" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_symptom_name",
+      "@id" : "https://w3id.org/def/radipo#has_symptom_name",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Gene_with_protein" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Gene_with_protein"
+      "@id" : "https://w3id.org/def/radipo#Gene_with_protein"
     },
     "is_ability_affected_by" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_ability_affected_by",
+      "@id" : "https://w3id.org/def/radipo#is_ability_affected_by",
       "@type" : "@id"
     },
     "has_cell_name" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_cell_name",
+      "@id" : "https://w3id.org/def/radipo#has_cell_name",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "is_associated_to_gene" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_associated_to_gene",
+      "@id" : "https://w3id.org/def/radipo#is_associated_to_gene",
       "@type" : "@id"
     },
     "Malformation_anomaly" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Malformation_anomaly"
+      "@id" : "https://w3id.org/def/radipo#Malformation_anomaly"
     },
     "has_gene_id" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_gene_id",
+      "@id" : "https://w3id.org/def/radipo#has_gene_id",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Disability" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disability"
+      "@id" : "https://w3id.org/def/radipo#Disability"
     },
     "ability_is_lost" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#ability_is_lost",
+      "@id" : "https://w3id.org/def/radipo#ability_is_lost",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "has_process_id" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_process_id",
+      "@id" : "https://w3id.org/def/radipo#has_process_id",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Experimental_phase" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase"
+      "@id" : "https://w3id.org/def/radipo#Experimental_phase"
     },
     "is_associated_to_disorder" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_associated_to_disorder",
+      "@id" : "https://w3id.org/def/radipo#is_associated_to_disorder",
       "@type" : "@id"
     },
     "has_drug_indication" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_drug_indication",
+      "@id" : "https://w3id.org/def/radipo#has_drug_indication",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "has_id" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_id",
+      "@id" : "https://w3id.org/def/radipo#has_id",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Disease" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disease"
+      "@id" : "https://w3id.org/def/radipo#Disease"
     },
     "has_protein_id" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_id",
+      "@id" : "https://w3id.org/def/radipo#has_protein_id",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "has_symptom" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_symptom",
+      "@id" : "https://w3id.org/def/radipo#has_symptom",
       "@type" : "@id"
     },
     "Drug" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug"
+      "@id" : "https://w3id.org/def/radipo#Drug"
     },
     "is_associated_to_disability" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_associated_to_disability",
+      "@id" : "https://w3id.org/def/radipo#is_associated_to_disability",
       "@type" : "@id"
     },
     "is_related_to_disability" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_related_to_disability",
+      "@id" : "https://w3id.org/def/radipo#is_related_to_disability",
       "@type" : "@id"
     },
     "has_protein_involved" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_involved",
+      "@id" : "https://w3id.org/def/radipo#has_protein_involved",
       "@type" : "@id"
     },
     "creator" : {
@@ -174,185 +174,185 @@
       "@type" : "@id"
     },
     "Ability_affected" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Ability_affected"
+      "@id" : "https://w3id.org/def/radipo#Ability_affected"
     },
     "has_drug_id" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_drug_id",
+      "@id" : "https://w3id.org/def/radipo#has_drug_id",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "is_target_of" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of",
+      "@id" : "https://w3id.org/def/radipo#is_target_of",
       "@type" : "@id"
     },
     "Biotech" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Biotech"
+      "@id" : "https://w3id.org/def/radipo#Biotech"
     },
     "Symptom" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Symptom"
+      "@id" : "https://w3id.org/def/radipo#Symptom"
     },
     "has_degree_of_severity" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_degree_of_severity",
+      "@id" : "https://w3id.org/def/radipo#has_degree_of_severity",
       "@type" : "@id"
     },
     "rights" : {
       "@id" : "http://purl.org/dc/elements/1.1/rights"
     },
     "ability_is_lost_in" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#ability_is_lost_in",
+      "@id" : "https://w3id.org/def/radipo#ability_is_lost_in",
       "@type" : "@id"
     },
     "has_genetic_location" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_genetic_location",
+      "@id" : "https://w3id.org/def/radipo#has_genetic_location",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "had_by_protein" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#had_by_protein",
+      "@id" : "https://w3id.org/def/radipo#had_by_protein",
       "@type" : "@id"
     },
     "has_protein_name" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_name",
+      "@id" : "https://w3id.org/def/radipo#has_protein_name",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Transporter" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Transporter"
+      "@id" : "https://w3id.org/def/radipo#Transporter"
     },
     "Small_molecule" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Small_molecule"
+      "@id" : "https://w3id.org/def/radipo#Small_molecule"
     },
     "Temporality" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Temporality"
+      "@id" : "https://w3id.org/def/radipo#Temporality"
     },
     "Subtype_of_disorder" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Subtype_of_disorder"
+      "@id" : "https://w3id.org/def/radipo#Subtype_of_disorder"
     },
     "Loss_of_ability" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Loss_of_ability"
+      "@id" : "https://w3id.org/def/radipo#Loss_of_ability"
     },
     "has_symptom_description" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_symptom_description",
+      "@id" : "https://w3id.org/def/radipo#has_symptom_description",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "ability_specification" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#ability_specification",
+      "@id" : "https://w3id.org/def/radipo#ability_specification",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "has_cell_id" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_cell_id",
+      "@id" : "https://w3id.org/def/radipo#has_cell_id",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
     },
     "Clinical_syndrome" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Clinical_syndrome"
+      "@id" : "https://w3id.org/def/radipo#Clinical_syndrome"
     },
     "Cellular_component" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Cellular_component"
+      "@id" : "https://w3id.org/def/radipo#Cellular_component"
     },
     "Clinical_group" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Clinical_group"
+      "@id" : "https://w3id.org/def/radipo#Clinical_group"
     },
     "Etiological_subtype" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Etiological_subtype"
+      "@id" : "https://w3id.org/def/radipo#Etiological_subtype"
     },
     "is_encoded_by" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_encoded_by",
+      "@id" : "https://w3id.org/def/radipo#is_encoded_by",
       "@type" : "@id"
     },
     "has_EC_number" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_EC_number",
+      "@id" : "https://w3id.org/def/radipo#has_EC_number",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "is_present_in" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_present_in",
+      "@id" : "https://w3id.org/def/radipo#is_present_in",
       "@type" : "@id"
     },
     "Biological_process" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Biological_process"
+      "@id" : "https://w3id.org/def/radipo#Biological_process"
     },
     "produces_loss_of_ability" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#produces_loss_of_ability",
+      "@id" : "https://w3id.org/def/radipo#produces_loss_of_ability",
       "@type" : "@id"
     },
     "Regulator" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Regulator"
+      "@id" : "https://w3id.org/def/radipo#Regulator"
     },
     "Histopathological_subtype" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Histopathological_subtype"
+      "@id" : "https://w3id.org/def/radipo#Histopathological_subtype"
     },
     "Non_coding_RNA" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Non_coding_RNA"
+      "@id" : "https://w3id.org/def/radipo#Non_coding_RNA"
     },
     "has_hpo_id" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_hpo_id",
+      "@id" : "https://w3id.org/def/radipo#has_hpo_id",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Morphological_anomaly" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Morphological_anomaly"
+      "@id" : "https://w3id.org/def/radipo#Morphological_anomaly"
     },
     "has_temporality" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_temporality",
+      "@id" : "https://w3id.org/def/radipo#has_temporality",
       "@type" : "@id"
     },
     "type_of_association" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#type_of_association"
+      "@id" : "https://w3id.org/def/radipo#type_of_association"
     },
     "Disorder" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disorder"
+      "@id" : "https://w3id.org/def/radipo#Disorder"
     },
     "has_function" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function",
+      "@id" : "https://w3id.org/def/radipo#has_function",
       "@type" : "@id"
     },
     "has_disorder_name" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_disorder_name",
+      "@id" : "https://w3id.org/def/radipo#has_disorder_name",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Function" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Function"
+      "@id" : "https://w3id.org/def/radipo#Function"
     },
     "Group_of_disorders" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Group_of_disorders"
+      "@id" : "https://w3id.org/def/radipo#Group_of_disorders"
     },
     "has_phase_name" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_phase_name",
+      "@id" : "https://w3id.org/def/radipo#has_phase_name",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "degree_from_disability" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#degree_from_disability",
+      "@id" : "https://w3id.org/def/radipo#degree_from_disability",
       "@type" : "@id"
     },
     "has_cellular_component" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_cellular_component",
+      "@id" : "https://w3id.org/def/radipo#has_cellular_component",
       "@type" : "@id"
     },
     "Genetic_entity" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity"
+      "@id" : "https://w3id.org/def/radipo#Genetic_entity"
     },
     "is_phase_of" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of",
+      "@id" : "https://w3id.org/def/radipo#is_phase_of",
       "@type" : "@id"
     },
     "has_biological_process" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_biological_process",
+      "@id" : "https://w3id.org/def/radipo#has_biological_process",
       "@type" : "@id"
     },
     "Enzyme" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Enzyme"
+      "@id" : "https://w3id.org/def/radipo#Enzyme"
     },
     "has_function_id" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function_id",
+      "@id" : "https://w3id.org/def/radipo#has_function_id",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "has_process_name" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_process_name",
+      "@id" : "https://w3id.org/def/radipo#has_process_name",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Protein" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein"
+      "@id" : "https://w3id.org/def/radipo#Protein"
     }
   }
 }

@@ -1,17 +1,17 @@
-@prefix : <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#> .
+@prefix : <https://w3id.org/def/radipo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO> .
+@base <https://w3id.org/def/radipo> .
 
-<http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO> rdf:type owl:Ontology ;
-                                                               <http://purl.org/dc/elements/1.1/creator> "Ariadna Villanueva Marijuan" ,
-                                                                                                         "Marina Herrero Juanco" ;
-                                                               <http://purl.org/dc/elements/1.1/rights> "https://creativecommons.org/licenses/by/4.0/" ;
-                                                               <http://purl.org/dc/elements/1.1/title> "RaDiPO: Rare Disease Proteins Ontology" ;
-                                                               rdfs:comment "Course: Semantic Technologies, Master's in Computational Biology, UPM" .
+<https://w3id.org/def/radipo> rdf:type owl:Ontology ;
+                               <http://purl.org/dc/elements/1.1/creator> "Ariadna Villanueva Marijuan" ,
+                                                                         "Marina Herrero Juanco" ;
+                               <http://purl.org/dc/elements/1.1/rights> "https://creativecommons.org/licenses/by/4.0/" ;
+                               <http://purl.org/dc/elements/1.1/title> "RaDiPO: Rare Disease Proteins Ontology" ;
+                               rdfs:comment "Course: Semantic Technologies, Master's in Computational Biology, UPM" .
 
 #################################################################
 #    Annotation properties
@@ -29,7 +29,7 @@
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#type_of_association
+###  https://w3id.org/def/radipo#type_of_association
 :type_of_association rdf:type owl:AnnotationProperty ;
                      rdfs:range xsd:string ;
                      rdfs:domain :is_associated_to_disorder .
@@ -39,88 +39,88 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#ability_is_lost_in
+###  https://w3id.org/def/radipo#ability_is_lost_in
 :ability_is_lost_in rdf:type owl:ObjectProperty ;
                     owl:inverseOf :produces_loss_of_ability ;
                     rdfs:domain :Loss_of_ability ;
                     rdfs:range :Disability .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability
+###  https://w3id.org/def/radipo#affects_ability
 :affects_ability rdf:type owl:ObjectProperty ;
                  owl:inverseOf :is_ability_affected_by ;
                  rdfs:domain :Disability ;
                  rdfs:range :Ability_affected .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#degree_from_disability
+###  https://w3id.org/def/radipo#degree_from_disability
 :degree_from_disability rdf:type owl:ObjectProperty ;
                         owl:inverseOf :has_degree_of_severity ;
                         rdfs:domain :Degree_of_severity ;
                         rdfs:range :Disability .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#had_by_protein
+###  https://w3id.org/def/radipo#had_by_protein
 :had_by_protein rdf:type owl:ObjectProperty ;
                 owl:inverseOf :has_function ;
                 rdfs:domain :Function ;
                 rdfs:range :Protein .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_biological_process
+###  https://w3id.org/def/radipo#has_biological_process
 :has_biological_process rdf:type owl:ObjectProperty ;
                         owl:inverseOf :has_protein_involved ;
                         rdfs:domain :Protein ;
                         rdfs:range :Biological_process .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_cellular_component
+###  https://w3id.org/def/radipo#has_cellular_component
 :has_cellular_component rdf:type owl:ObjectProperty ;
                         owl:inverseOf :has_protein_located ;
                         rdfs:domain :Protein ;
                         rdfs:range :Cellular_component .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_degree_of_severity
+###  https://w3id.org/def/radipo#has_degree_of_severity
 :has_degree_of_severity rdf:type owl:ObjectProperty ;
                         rdfs:domain :Disability ;
                         rdfs:range :Degree_of_severity .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function
+###  https://w3id.org/def/radipo#has_function
 :has_function rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
               rdfs:domain :Protein ;
               rdfs:range :Function .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_involved
+###  https://w3id.org/def/radipo#has_protein_involved
 :has_protein_involved rdf:type owl:ObjectProperty ;
                       rdfs:domain :Biological_process ;
                       rdfs:range :Protein .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_located
+###  https://w3id.org/def/radipo#has_protein_located
 :has_protein_located rdf:type owl:ObjectProperty ;
                      rdfs:domain :Cellular_component ;
                      rdfs:range :Protein .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_product
+###  https://w3id.org/def/radipo#has_protein_product
 :has_protein_product rdf:type owl:ObjectProperty ;
                      owl:inverseOf :is_encoded_by ;
                      rdfs:domain :Gene_with_protein ;
                      rdfs:range :Protein .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_symptom
+###  https://w3id.org/def/radipo#has_symptom
 :has_symptom rdf:type owl:ObjectProperty ;
              owl:inverseOf :is_present_in ;
              rdfs:domain :Clinical_entity ;
              rdfs:range :Symptom .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target
+###  https://w3id.org/def/radipo#has_target
 :has_target rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
             owl:inverseOf :is_target_of ;
@@ -128,7 +128,7 @@
             rdfs:range :Protein .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_temporality
+###  https://w3id.org/def/radipo#has_temporality
 :has_temporality rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf owl:topObjectProperty ;
                  owl:inverseOf :is_related_to_disability ;
@@ -136,13 +136,13 @@
                  rdfs:range :Temporality .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_ability_affected_by
+###  https://w3id.org/def/radipo#is_ability_affected_by
 :is_ability_affected_by rdf:type owl:ObjectProperty ;
                         rdfs:domain :Ability_affected ;
                         rdfs:range :Disability .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_associated_to_disability
+###  https://w3id.org/def/radipo#is_associated_to_disability
 :is_associated_to_disability rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf owl:topObjectProperty ;
                              owl:inverseOf :is_consequence_of_disorder ;
@@ -150,7 +150,7 @@
                              rdfs:range :Disability .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_associated_to_disorder
+###  https://w3id.org/def/radipo#is_associated_to_disorder
 :is_associated_to_disorder rdf:type owl:ObjectProperty ;
                            owl:inverseOf :is_associated_to_gene ;
                            rdfs:domain :Genetic_entity ;
@@ -158,57 +158,57 @@
                            :type_of_association xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_associated_to_gene
+###  https://w3id.org/def/radipo#is_associated_to_gene
 :is_associated_to_gene rdf:type owl:ObjectProperty ;
                        rdfs:domain :Clinical_entity ;
                        rdfs:range :Genetic_entity ;
                        :type_of_association xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_consequence_of_disorder
+###  https://w3id.org/def/radipo#is_consequence_of_disorder
 :is_consequence_of_disorder rdf:type owl:ObjectProperty ;
                             rdfs:domain :Disability ;
                             rdfs:range :Clinical_entity .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_encoded_by
+###  https://w3id.org/def/radipo#is_encoded_by
 :is_encoded_by rdf:type owl:ObjectProperty ;
                rdfs:domain :Protein ;
                rdfs:range :Gene_with_protein .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_in_phase
+###  https://w3id.org/def/radipo#is_in_phase
 :is_in_phase rdf:type owl:ObjectProperty ;
              owl:inverseOf :is_phase_of ;
              rdfs:domain :Drug ;
              rdfs:range :Experimental_phase .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of
+###  https://w3id.org/def/radipo#is_phase_of
 :is_phase_of rdf:type owl:ObjectProperty ;
              rdfs:domain :Experimental_phase ;
              rdfs:range :Drug .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_present_in
+###  https://w3id.org/def/radipo#is_present_in
 :is_present_in rdf:type owl:ObjectProperty ;
                rdfs:domain :Symptom ;
                rdfs:range :Clinical_entity .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_related_to_disability
+###  https://w3id.org/def/radipo#is_related_to_disability
 :is_related_to_disability rdf:type owl:ObjectProperty ;
                           rdfs:domain :Temporality ;
                           rdfs:range :Disability .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of
+###  https://w3id.org/def/radipo#is_target_of
 :is_target_of rdf:type owl:ObjectProperty ;
               rdfs:domain :Protein ;
               rdfs:range :Drug .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#produces_loss_of_ability
+###  https://w3id.org/def/radipo#produces_loss_of_ability
 :produces_loss_of_ability rdf:type owl:ObjectProperty ;
                           rdfs:domain :Disability ;
                           rdfs:range :Loss_of_ability .
@@ -218,202 +218,202 @@
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#ability_is_lost
+###  https://w3id.org/def/radipo#ability_is_lost
 :ability_is_lost rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Loss_of_ability ;
                  rdfs:range xsd:boolean .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#ability_specification
+###  https://w3id.org/def/radipo#ability_specification
 :ability_specification rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf owl:topDataProperty ;
                        rdfs:domain :Ability_affected ;
                        rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_EC_number
+###  https://w3id.org/def/radipo#has_EC_number
 :has_EC_number rdf:type owl:DatatypeProperty ;
                rdfs:domain :Enzyme ;
                rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_catalytic_activity
+###  https://w3id.org/def/radipo#has_catalytic_activity
 :has_catalytic_activity rdf:type owl:DatatypeProperty ;
                         rdfs:domain :Enzyme ;
                         rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_cell_id
+###  https://w3id.org/def/radipo#has_cell_id
 :has_cell_id rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :has_id ;
              rdfs:domain :Cellular_component ;
              rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_cell_name
+###  https://w3id.org/def/radipo#has_cell_name
 :has_cell_name rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf :has_name ;
                rdfs:domain :Cellular_component ;
                rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_description
+###  https://w3id.org/def/radipo#has_description
 :has_description rdf:type owl:DatatypeProperty ;
                  rdfs:domain owl:Thing ;
                  rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_disorder_description
+###  https://w3id.org/def/radipo#has_disorder_description
 :has_disorder_description rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf :has_description ;
                           rdfs:domain :Clinical_entity ;
                           rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_disorder_id
+###  https://w3id.org/def/radipo#has_disorder_id
 :has_disorder_id rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf :has_id ;
                  rdfs:domain :Clinical_entity ;
                  rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_disorder_name
+###  https://w3id.org/def/radipo#has_disorder_name
 :has_disorder_name rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf :has_name ;
                    rdfs:domain :Clinical_entity ;
                    rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_drug_description
+###  https://w3id.org/def/radipo#has_drug_description
 :has_drug_description rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf :has_description ;
                       rdfs:domain :Drug ;
                       rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_drug_id
+###  https://w3id.org/def/radipo#has_drug_id
 :has_drug_id rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :has_id ;
              rdfs:domain :Drug ;
              rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_drug_indication
+###  https://w3id.org/def/radipo#has_drug_indication
 :has_drug_indication rdf:type owl:DatatypeProperty ;
                      rdfs:domain :Drug ;
                      rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_drug_name
+###  https://w3id.org/def/radipo#has_drug_name
 :has_drug_name rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf :has_name ;
                rdfs:domain :Drug ;
                rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function_description
+###  https://w3id.org/def/radipo#has_function_description
 :has_function_description rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf :has_description ;
                           rdfs:domain :Function ;
                           rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function_id
+###  https://w3id.org/def/radipo#has_function_id
 :has_function_id rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf :has_id ;
                  rdfs:domain :Function ;
                  rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_function_name
+###  https://w3id.org/def/radipo#has_function_name
 :has_function_name rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf :has_name ;
                    rdfs:domain :Function ;
                    rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_gene_id
+###  https://w3id.org/def/radipo#has_gene_id
 :has_gene_id rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :has_id ;
              rdfs:domain :Genetic_entity ;
              rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_gene_name
+###  https://w3id.org/def/radipo#has_gene_name
 :has_gene_name rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf :has_name ;
                rdfs:domain :Genetic_entity ;
                rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_genetic_location
+###  https://w3id.org/def/radipo#has_genetic_location
 :has_genetic_location rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Genetic_entity ;
                       rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_hpo_id
+###  https://w3id.org/def/radipo#has_hpo_id
 :has_hpo_id rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf :has_id ;
             rdfs:domain :Symptom ;
             rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_id
+###  https://w3id.org/def/radipo#has_id
 :has_id rdf:type owl:DatatypeProperty ;
         rdfs:domain owl:Thing ;
         rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_name
+###  https://w3id.org/def/radipo#has_name
 :has_name rdf:type owl:DatatypeProperty ;
           rdfs:domain owl:Thing ;
           rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_phase_name
+###  https://w3id.org/def/radipo#has_phase_name
 :has_phase_name rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf :has_name ;
                 rdfs:domain :Experimental_phase ;
                 rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_process_id
+###  https://w3id.org/def/radipo#has_process_id
 :has_process_id rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf :has_id ;
                 rdfs:domain :Biological_process ;
                 rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_process_name
+###  https://w3id.org/def/radipo#has_process_name
 :has_process_name rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :has_name ;
                   rdfs:domain :Biological_process ;
                   rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_id
+###  https://w3id.org/def/radipo#has_protein_id
 :has_protein_id rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf :has_id ;
                 rdfs:domain :Protein ;
                 rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_name
+###  https://w3id.org/def/radipo#has_protein_name
 :has_protein_name rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :has_name ;
                   rdfs:domain :Protein ;
                   rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_symptom_description
+###  https://w3id.org/def/radipo#has_symptom_description
 :has_symptom_description rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf :has_description ;
                          rdfs:domain :Symptom ;
                          rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_symptom_name
+###  https://w3id.org/def/radipo#has_symptom_name
 :has_symptom_name rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :has_name ;
                   rdfs:domain :Symptom ;
@@ -424,7 +424,7 @@
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Ability_affected
+###  https://w3id.org/def/radipo#Ability_affected
 :Ability_affected rdf:type owl:Class ;
                   rdfs:subClassOf [ rdf:type owl:Restriction ;
                                     owl:onProperty :is_ability_affected_by ;
@@ -438,12 +438,12 @@
                   rdfs:label "Ability_affected" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Biological_anomaly
+###  https://w3id.org/def/radipo#Biological_anomaly
 :Biological_anomaly rdf:type owl:Class ;
                     rdfs:subClassOf :Disorder .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Biological_process
+###  https://w3id.org/def/radipo#Biological_process
 :Biological_process rdf:type owl:Class ;
                     rdfs:subClassOf [ rdf:type owl:Restriction ;
                                       owl:onProperty :has_protein_involved ;
@@ -462,7 +462,7 @@
                     rdfs:label "Biological_process" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Biotech
+###  https://w3id.org/def/radipo#Biotech
 :Biotech rdf:type owl:Class ;
          rdfs:subClassOf :Drug ;
          owl:disjointWith :Small_molecule ;
@@ -470,7 +470,7 @@
          rdfs:label "Biotech" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Cellular_component
+###  https://w3id.org/def/radipo#Cellular_component
 :Cellular_component rdf:type owl:Class ;
                     rdfs:subClassOf [ rdf:type owl:Restriction ;
                                       owl:onProperty :has_protein_located ;
@@ -489,7 +489,7 @@
                     rdfs:label "Cellular_component" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Clinical_entity
+###  https://w3id.org/def/radipo#Clinical_entity
 :Clinical_entity rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ;
                                    owl:onProperty :has_symptom ;
@@ -504,10 +504,6 @@
                                    owl:someValuesFrom :Genetic_entity
                                  ] ,
                                  [ rdf:type owl:Restriction ;
-                                   owl:onProperty :has_disorder_description ;
-                                   owl:someValuesFrom owl:rational
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
                                    owl:onProperty :has_disorder_id ;
                                    owl:someValuesFrom xsd:string
                                  ] ,
@@ -519,22 +515,22 @@
                  rdfs:label "Clinical_entity" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Clinical_group
+###  https://w3id.org/def/radipo#Clinical_group
 :Clinical_group rdf:type owl:Class ;
                 rdfs:subClassOf :Group_of_disorders .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Clinical_subtype
+###  https://w3id.org/def/radipo#Clinical_subtype
 :Clinical_subtype rdf:type owl:Class ;
                   rdfs:subClassOf :Subtype_of_disorder .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Clinical_syndrome
+###  https://w3id.org/def/radipo#Clinical_syndrome
 :Clinical_syndrome rdf:type owl:Class ;
                    rdfs:subClassOf :Disorder .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Degree_of_severity
+###  https://w3id.org/def/radipo#Degree_of_severity
 :Degree_of_severity rdf:type owl:Class ;
                     rdfs:subClassOf [ rdf:type owl:Restriction ;
                                       owl:onProperty :degree_from_disability ;
@@ -548,7 +544,7 @@
                     rdfs:label "Degree_of_severity" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disability
+###  https://w3id.org/def/radipo#Disability
 :Disability rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
                               owl:onProperty :affects_ability ;
@@ -574,19 +570,19 @@
             rdfs:label "Disability" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disease
+###  https://w3id.org/def/radipo#Disease
 :Disease rdf:type owl:Class ;
          rdfs:subClassOf :Disorder .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disorder
+###  https://w3id.org/def/radipo#Disorder
 :Disorder rdf:type owl:Class ;
           rdfs:subClassOf :Clinical_entity ;
           rdfs:comment "A disorder can be a disease, a symdrom or an anomaly." ;
           rdfs:label "Disorder" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug
+###  https://w3id.org/def/radipo#Drug
 :Drug rdf:type owl:Class ;
       rdfs:subClassOf [ rdf:type owl:Restriction ;
                         owl:onProperty :has_target ;
@@ -616,7 +612,7 @@
       rdfs:label "Drug" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Enzyme
+###  https://w3id.org/def/radipo#Enzyme
 :Enzyme rdf:type owl:Class ;
         rdfs:subClassOf :Protein ,
                         [ rdf:type owl:Restriction ;
@@ -631,12 +627,12 @@
         rdfs:label "Enzyme" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Etiological_subtype
+###  https://w3id.org/def/radipo#Etiological_subtype
 :Etiological_subtype rdf:type owl:Class ;
                      rdfs:subClassOf :Subtype_of_disorder .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase
+###  https://w3id.org/def/radipo#Experimental_phase
 :Experimental_phase rdf:type owl:Class ;
                     rdfs:subClassOf [ rdf:type owl:Restriction ;
                                       owl:onProperty :is_phase_of ;
@@ -650,7 +646,7 @@
                     rdfs:label "Experimental_phase" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Function
+###  https://w3id.org/def/radipo#Function
 :Function rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty :had_by_protein ;
@@ -673,7 +669,7 @@
           rdfs:label "Function" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Gene_with_protein
+###  https://w3id.org/def/radipo#Gene_with_protein
 :Gene_with_protein rdf:type owl:Class ;
                    rdfs:subClassOf :Genetic_entity ,
                                    [ rdf:type owl:Restriction ;
@@ -683,7 +679,7 @@
                    owl:disjointWith :Non_coding_RNA .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity
+###  https://w3id.org/def/radipo#Genetic_entity
 :Genetic_entity rdf:type owl:Class ;
                 rdfs:subClassOf [ rdf:type owl:Restriction ;
                                   owl:onProperty :is_associated_to_disorder ;
@@ -704,19 +700,19 @@
                 rdfs:label "Genetic_entity" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Group_of_disorders
+###  https://w3id.org/def/radipo#Group_of_disorders
 :Group_of_disorders rdf:type owl:Class ;
                     rdfs:subClassOf :Clinical_entity ;
                     rdfs:comment "A group of disorder is a set of disorder that have some properties in common." ;
                     rdfs:label "Group_of_disorders" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Histopathological_subtype
+###  https://w3id.org/def/radipo#Histopathological_subtype
 :Histopathological_subtype rdf:type owl:Class ;
                            rdfs:subClassOf :Subtype_of_disorder .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Loss_of_ability
+###  https://w3id.org/def/radipo#Loss_of_ability
 :Loss_of_ability rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ;
                                    owl:onProperty :ability_is_lost_in ;
@@ -730,27 +726,27 @@
                  rdfs:label "Loss_of_ability" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Malformation_anomaly
+###  https://w3id.org/def/radipo#Malformation_anomaly
 :Malformation_anomaly rdf:type owl:Class ;
                       rdfs:subClassOf :Disorder .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Morphological_anomaly
+###  https://w3id.org/def/radipo#Morphological_anomaly
 :Morphological_anomaly rdf:type owl:Class ;
                        rdfs:subClassOf :Disorder .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Non_coding_RNA
+###  https://w3id.org/def/radipo#Non_coding_RNA
 :Non_coding_RNA rdf:type owl:Class ;
                 rdfs:subClassOf :Genetic_entity .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Particular_clinical_situation
+###  https://w3id.org/def/radipo#Particular_clinical_situation
 :Particular_clinical_situation rdf:type owl:Class ;
                                rdfs:subClassOf :Disorder .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein
+###  https://w3id.org/def/radipo#Protein
 :Protein rdf:type owl:Class ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
                            owl:onProperty :has_biological_process ;
@@ -772,33 +768,41 @@
                            owl:onProperty :is_encoded_by ;
                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onClass :Gene_with_protein
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_protein_id ;
+                           owl:someValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_protein_name ;
+                           owl:someValuesFrom xsd:string
                          ] ;
          rdfs:comment "A protein is a biological molecule encoded by a gene. The ids and names are retrieved from Uniprot." ;
          rdfs:label "Protein" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Regulator
+###  https://w3id.org/def/radipo#Regulator
 :Regulator rdf:type owl:Class ;
            rdfs:subClassOf :Protein ;
            rdfs:comment "This type of protein usually regulates some process in the cell or binds to DNA or RNA to regulate the transcription or translation of a protein." ;
            rdfs:label "Regulator" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Small_molecule
+###  https://w3id.org/def/radipo#Small_molecule
 :Small_molecule rdf:type owl:Class ;
                 rdfs:subClassOf :Drug ;
                 rdfs:comment "Low molecular weight drugs (900 daltons) which are produced by chemical synthesis. These drugs have well defined structures and chemical properties. In DrugBank, some drugs larger than 900 daltons are considered small molecule drugs (such as monomers: ribo- or deoxyribonucleotides, amino acids, and monosaccharides)." ;
                 rdfs:label "Small_molecule" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Subtype_of_disorder
+###  https://w3id.org/def/radipo#Subtype_of_disorder
 :Subtype_of_disorder rdf:type owl:Class ;
                      rdfs:subClassOf :Clinical_entity ;
                      rdfs:comment "A subtype of disorder is a especific type of disorder that can be either clinical, etiological or hisotpahtological." ;
                      rdfs:label "Subtype_of_disorder" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Symptom
+###  https://w3id.org/def/radipo#Symptom
 :Symptom rdf:type owl:Class ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
                            owl:onProperty :is_present_in ;
@@ -820,7 +824,7 @@
          rdfs:label "Symptom" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Temporality
+###  https://w3id.org/def/radipo#Temporality
 :Temporality rdf:type owl:Class ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
                                owl:onProperty :is_related_to_disability ;
@@ -834,11 +838,20 @@
              rdfs:label "Temporality" .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Transporter
+###  https://w3id.org/def/radipo#Transporter
 :Transporter rdf:type owl:Class ;
              rdfs:subClassOf :Protein ;
              rdfs:comment "A protein that can transport a molecule or group of molecules." ;
              rdfs:label "Transporter" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/radipo#16666
+<https://w3id.org/def/radipo#16666> rdf:type owl:NamedIndividual ,
+                                             :Malformation_anomaly .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
