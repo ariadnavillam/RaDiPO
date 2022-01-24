@@ -19,33 +19,8 @@ It is obvious that not all the pitfalls are equally important; their impact in t
 
 
 
-#### P11. Missing domain or range in properties <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/important.png" height="15px"> (4 cases detected).
-*Object and/or datatype properties without domain or range (or none of them) are included in the ontology.*
-
-    
-
-#### P05. Defining wrong inverse relationships <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/critical.png" height="15px"> (2 cases detected).
-*Two relationships are defined as inverse relations when they are not necessarily inverse.*
-
-    
-
-#### P08. Missing annotations <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/minor.png" height="15px"> (67 cases detected).
+#### P08. Missing annotations <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/minor.png" height="15px"> (68 cases detected).
 *This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].*
-
-    
-
-#### P24. Using recursive definitions <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/important.png" height="15px"> (1 cases detected).
-*An ontology element (a class, an object property or a datatype property) is used in its own definition. Some examples of this would be: (a) the definition of a class as the enumeration of several classes including itself;  (b) the appearance of a class within its owl:equivalentClass or rdfs:subClassOf axioms; (c) the appearance of an object property in its rdfs:domain or range rdfs:range definitions; or (d) the appearance of a datatype property in its rdfs:domain definition.*
-
-    
-
-#### P25. Defining a relationship as inverse to itself <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/important.png" height="15px"> (1 cases detected).
-*A relationship is defined as inverse of itself. In this case, this relationship could have been defined as owl:SymmetricProperty instead.*
-
-    
-
-#### P13. Inverse relationships not explicitly declared <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/minor.png" height="15px"> (2 cases detected).
-*This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.*
 
     
 

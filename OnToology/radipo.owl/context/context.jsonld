@@ -16,7 +16,8 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "has_catalytic_activity" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_catalytic_activity"
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_catalytic_activity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "has_disorder_id" : {
       "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_disorder_id",
@@ -330,6 +331,10 @@
     },
     "Genetic_entity" : {
       "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity"
+    },
+    "is_phase_of" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of",
+      "@type" : "@id"
     },
     "has_biological_process" : {
       "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_biological_process",

@@ -49,8 +49,8 @@
 ###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability
 :affects_ability rdf:type owl:ObjectProperty ;
                  owl:inverseOf :is_ability_affected_by ;
-                 rdfs:domain :Ability_affected ;
-                 rdfs:range :Disability .
+                 rdfs:domain :Disability ;
+                 rdfs:range :Ability_affected .
 
 
 ###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#degree_from_disability
@@ -123,7 +123,7 @@
 ###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target
 :has_target rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
-            owl:inverseOf :has_target ;
+            owl:inverseOf :is_target_of ;
             rdfs:domain :Drug ;
             rdfs:range :Protein .
 
@@ -179,8 +179,15 @@
 
 ###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_in_phase
 :is_in_phase rdf:type owl:ObjectProperty ;
+             owl:inverseOf :is_phase_of ;
              rdfs:domain :Drug ;
              rdfs:range :Experimental_phase .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of
+:is_phase_of rdf:type owl:ObjectProperty ;
+             rdfs:domain :Experimental_phase ;
+             rdfs:range :Drug .
 
 
 ###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_present_in
@@ -196,7 +203,9 @@
 
 
 ###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of
-:is_target_of rdf:type owl:ObjectProperty .
+:is_target_of rdf:type owl:ObjectProperty ;
+              rdfs:domain :Protein ;
+              rdfs:range :Drug .
 
 
 ###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#produces_loss_of_ability
@@ -230,7 +239,8 @@
 
 ###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_catalytic_activity
 :has_catalytic_activity rdf:type owl:DatatypeProperty ;
-                        rdfs:domain :Enzyme .
+                        rdfs:domain :Enzyme ;
+                        rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_cell_id
@@ -249,6 +259,7 @@
 
 ###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_description
 :has_description rdf:type owl:DatatypeProperty ;
+                 rdfs:domain owl:Thing ;
                  rdfs:range xsd:string .
 
 
@@ -350,6 +361,7 @@
 
 ###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_id
 :has_id rdf:type owl:DatatypeProperty ;
+        rdfs:domain owl:Thing ;
         rdfs:range xsd:string .
 
 
@@ -627,6 +639,10 @@
 ###  http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase
 :Experimental_phase rdf:type owl:Class ;
                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :is_phase_of ;
+                                      owl:someValuesFrom :Drug
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
                                       owl:onProperty :has_phase_name ;
                                       owl:someValuesFrom xsd:string
                                     ] ;

@@ -181,10 +181,14 @@ This section provides details for each class and property defined by RaDiPO: Rar
          <dd>
             <a href="#ability_specification"
                title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#ability_specification">ability specification</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#affects_ability"
-               title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability">affects ability</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#is_ability_affected_by"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#is_ability_affected_by"
                title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_ability_affected_by">is ability affected by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#affects_ability"
+               title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability">affects ability</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -433,7 +437,9 @@ This section provides details for each class and property defined by RaDiPO: Rar
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#has_degree_of_severity"
+            <a href="#affects_ability"
+               title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability">affects ability</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#has_degree_of_severity"
                title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_degree_of_severity">has degree of severity</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#has_temporality"
                title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_temporality">has temporality</a>
@@ -447,8 +453,6 @@ This section provides details for each class and property defined by RaDiPO: Rar
          <dd>
             <a href="#ability_is_lost_in"
                title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#ability_is_lost_in">ability is lost in</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#affects_ability"
-               title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#affects_ability">affects ability</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#degree_from_disability"
                title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#degree_from_disability">degree from disability</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#is_ability_affected_by"
@@ -549,6 +553,14 @@ This section provides details for each class and property defined by RaDiPO: Rar
                title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_in_phase">is in phase</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#is_phase_of"
+               title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of">is phase of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#is_target_of"
+               title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of">is target of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="Enzyme">
@@ -611,7 +623,9 @@ This section provides details for each class and property defined by RaDiPO: Rar
          <dd>
             <a href="#has_phase_name"
                title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_phase_name">has phase name</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#is_phase_of"
+               title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of">is phase of</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -903,6 +917,8 @@ This section provides details for each class and property defined by RaDiPO: Rar
                title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_name">has protein name</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#is_encoded_by"
                title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_encoded_by">is encoded by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#is_target_of"
+               title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of">is target of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1203,6 +1219,12 @@ This section provides details for each class and property defined by RaDiPO: Rar
          </a>
       </li>
       <li>
+         <a href="#is_phase_of"
+            title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of">
+            <span>is phase of</span>
+         </a>
+      </li>
+      <li>
          <a href="#is_present_in"
             title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_present_in">
             <span>is present in</span>
@@ -1212,6 +1234,12 @@ This section provides details for each class and property defined by RaDiPO: Rar
          <a href="#is_related_to_disability"
             title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_related_to_disability">
             <span>is related to disability</span>
+         </a>
+      </li>
+      <li>
+         <a href="#is_target_of"
+            title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of">
+            <span>is target of</span>
          </a>
       </li>
       <li>
@@ -1262,14 +1290,14 @@ This section provides details for each class and property defined by RaDiPO: Rar
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Ability_affected"
-                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Ability_affected">Ability_affected</a>
+               <a href="#Disability"
+                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disability">Disability</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Disability"
-                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Disability">Disability</a>
+               <a href="#Ability_affected"
+                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Ability_affected">Ability_affected</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1616,10 +1644,8 @@ This section provides details for each class and property defined by RaDiPO: Rar
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#has_target"
-                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target">has target</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#has_target"
-                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target">has target</a>
+               <a href="#is_target_of"
+                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of">is target of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1868,6 +1894,42 @@ This section provides details for each class and property defined by RaDiPO: Rar
                   title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase">Experimental_phase</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#is_phase_of"
+                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of">is phase of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="is_phase_of">
+      <h3>is phase of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_phase_of</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Experimental_phase"
+                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Experimental_phase">Experimental_phase</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Drug"
+                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug">Drug</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#is_in_phase"
+                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_in_phase">is in phase</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -1926,6 +1988,36 @@ This section provides details for each class and property defined by RaDiPO: Rar
             <dd>
                <a href="#has_temporality"
                   title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_temporality">has temporality</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="is_target_of">
+      <h3>is target of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#is_target_of</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Protein"
+                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Protein">Protein</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Drug"
+                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Drug">Drug</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#has_target"
+                  title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_target">has target</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -2214,6 +2306,12 @@ This section provides details for each class and property defined by RaDiPO: Rar
                   title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Enzyme">Enzyme</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
          </dl>
       </div>
    </div>
@@ -2297,6 +2395,13 @@ This section provides details for each class and property defined by RaDiPO: Rar
                <sup class="type-dp" title="data property">dp</sup>, <a href="#has_symptom_description"
                   title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_symptom_description">has symptom description</a>
                <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Thing"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -2767,6 +2872,13 @@ This section provides details for each class and property defined by RaDiPO: Rar
                <sup class="type-dp" title="data property">dp</sup>, <a href="#has_protein_id"
                   title="http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_protein_id">has protein id</a>
                <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Thing"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
