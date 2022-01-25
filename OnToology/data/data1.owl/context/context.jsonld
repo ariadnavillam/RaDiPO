@@ -1,0 +1,31 @@
+{
+  "@context" : {
+    "has_disorder_name" : {
+      "@id" : "https://w3id.org/def/radipo#has_disorder_name"
+    },
+    "has_disorder_id" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_disorder_id"
+    },
+    "has_genetic_location" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_genetic_location"
+    },
+    "is_associated_to_disorder" : {
+      "@id" : "https://w3id.org/def/radipo#is_associated_to_disorder"
+    },
+    "is_associated_to_gene" : {
+      "@id" : "https://w3id.org/def/radipo#is_associated_to_gene"
+    },
+    "has_gene_name" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#has_gene_name"
+    },
+    "has_gene_id" : {
+      "@id" : "https://w3id.org/def/radipo#has_gene_id"
+    },
+    "Clinical_entity" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Clinical_entity"
+    },
+    "Genetic_entity" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity"
+    }
+  }
+}
