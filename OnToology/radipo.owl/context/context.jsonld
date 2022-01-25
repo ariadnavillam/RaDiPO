@@ -169,6 +169,9 @@
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
     },
+    "NamedIndividual" : {
+      "@id" : "https://w3id.org/def/radipo#NamedIndividual"
+    },
     "topObjectProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
       "@type" : "@id"
@@ -274,6 +277,9 @@
       "@id" : "https://w3id.org/def/radipo#produces_loss_of_ability",
       "@type" : "@id"
     },
+    "Malformation_syndrome" : {
+      "@id" : "https://w3id.org/def/radipo#Malformation_syndrome"
+    },
     "Regulator" : {
       "@id" : "https://w3id.org/def/radipo#Regulator"
     },
@@ -330,7 +336,7 @@
       "@type" : "@id"
     },
     "Genetic_entity" : {
-      "@id" : "https://w3id.org/def/radipo#Genetic_entity"
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2022/0/RaDiPO#Genetic_entity"
     },
     "is_phase_of" : {
       "@id" : "https://w3id.org/def/radipo#is_phase_of",
@@ -346,6 +352,9 @@
     "has_function_id" : {
       "@id" : "https://w3id.org/def/radipo#has_function_id",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Particular_clinical_situation_in_a_disease_or_syndrome" : {
+      "@id" : "https://w3id.org/def/radipo#Particular_clinical_situation_in_a_disease_or_syndrome"
     },
     "has_process_name" : {
       "@id" : "https://w3id.org/def/radipo#has_process_name",
